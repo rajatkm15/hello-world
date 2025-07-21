@@ -1,7 +1,7 @@
 backend:
   replicaCount: 1
   image:
-    repository: <Artifactory Server IP Address>/docker-local/backend
+    repository: <Artifactory Server IP Address>/jfrog-docker-local/backend
     tag: 1.0.0-48
     pullPolicy: IfNotPresent
   service:
@@ -14,7 +14,7 @@ backend:
 frontend:
   replicaCount: 1
   image:
-    repository: <Artifactory Server IP Address>/docker-local/frontend
+    repository: <Artifactory Server IP Address>/jfrog-docker-local/frontend
     tag: 1.0.0-48
     pullPolicy: IfNotPresent
   service:
