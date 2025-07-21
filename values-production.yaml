@@ -1,8 +1,8 @@
 backend:
   replicaCount: 1
   image:
-    repository: <Artifactory Server IP Address>/jfrog-docker-local/backend
-    tag: 1.0.0-48
+    repository: trial5qmcqv.jfrog.io/jfrog-docker-local/backend
+    tag: 1.0.0-51
     pullPolicy: IfNotPresent
   service:
     type: ClusterIP
@@ -14,8 +14,8 @@ backend:
 frontend:
   replicaCount: 1
   image:
-    repository: <Artifactory Server IP Address>/jfrog-docker-local/frontend
-    tag: 1.0.0-48
+    repository: trial5qmcqv.jfrog.io/jfrog-docker-local/frontend
+    tag: 1.0.0-51
     pullPolicy: IfNotPresent
   service:
     type: ClusterIP
