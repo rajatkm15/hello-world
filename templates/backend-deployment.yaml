@@ -23,7 +23,7 @@ spec:
         resources:
           {{- toYaml .Values.backend.resources | nindent 12 }}
       imagePullSecrets:
-      - name: artifactory-credentials  # Replace with your secret's name
+      - name: docker-cred  # Replace with your secret's name
       nodeSelector:
         {{- toYaml .Values.backend.nodeSelector | nindent 8 }}
       tolerations:
